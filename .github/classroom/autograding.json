@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "g++ -std=c++11 A63.cpp && ./a.out",
+      "input": "5\r\n1\r\n2\r\n3\r\n4\r\n5",
+      "output": "[\\w,\\W]*9[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "g++ -std=c++11 A63.cpp && ./a.out",
+      "input": "3\r\n1\r\n10\r\n100",
+      "output": "[\\w,\\W]*10[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "g++ -std=c++11 A63.cpp && ./a.out",
+      "input": "2\r\n10\r\n100",
+      "output": "[\\w,\\W]*0[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T4",
+      "setup": "",
+      "run": "g++ -std=c++11 A63.cpp && ./a.out",
+      "input": "3\r\n-50\r\n10\r\n100",
+      "output": "[\\w,\\W]*10[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
